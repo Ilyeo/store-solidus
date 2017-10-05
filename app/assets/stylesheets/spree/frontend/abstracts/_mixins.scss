@@ -1,0 +1,10 @@
+@mixin retina-image($filename, $extension, $width, $height) {
+  background-image: url($filename + '.' + $extension);
+  width: $width;
+  height: $height;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url($filename + '@2x.' + $extension);
+    background-size: $width $height;
+  }
+}
