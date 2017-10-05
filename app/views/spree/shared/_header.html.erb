@@ -1,7 +1,7 @@
 <header id="header" class="row" data-hook>
   <div></div>
-  <div class="brand"></div>
-  <div></div>
+  <%= link_to '', root_path, class: 'brand'%>
+  <%= render partial: 'spree/shared/main-navigation-bar' %>
   <!-- <figure id="logo" class="columns six" data-hook><%= logo %></figure>
   <%= render partial: 'spree/shared/nav_bar' %>
   <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %> -->
