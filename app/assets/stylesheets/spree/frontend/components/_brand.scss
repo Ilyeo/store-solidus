@@ -1,6 +1,4 @@
 .brand {
-  background-image: url('logo_fiorella.png');
-  width: 250px;
-  height: 82px;
+  @include retina-image('logo_fiorella', 'png', 250px, 82px);
   align-self: center;
 }
