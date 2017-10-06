@@ -1,0 +1,6 @@
+.search-submit {
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  @include sprite-selector(-48px, -55px, 20px, 20px);
+}
