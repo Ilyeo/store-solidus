@@ -1,0 +1,15 @@
+.search-form {
+  flex: 1 0 auto;
+
+  input[type='text'] {
+    border: none;
+    font-family: 'Merriweather Sans';
+    font-size: initial;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    @include input-placeholder {
+      color: $black;
+    }
+  }
+}

@@ -1,5 +1,15 @@
 <header id="header" class="row" data-hook>
-  <div></div>
+  <div class="search-bar">
+    <form action="#" class="search-form">
+      <button type="submit" name="button"></button>
+      <input type="text" placeholder="search">
+    </form>
+    <ul class="session-menu">
+      <li><a href="#">create account</a></li>
+      <li><a href="#">log in</a></li>
+      <li><a href="#">cart</a></li>
+    </ul>
+  </div>
   <%= link_to '', root_path, class: 'brand'%>
   <%= render partial: 'spree/shared/main-navigation-bar' %>
   <!-- <figure id="logo" class="columns six" data-hook><%= logo %></figure>
