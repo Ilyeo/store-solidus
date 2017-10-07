@@ -8,9 +8,7 @@
 
   li {
     &:last-child {
-      a {
-        border-right: none;
-      }
+      a { border-right: none; }
     }
 
     a {
@@ -24,6 +22,7 @@
       &:hover {
         color: $cerisered;
         font-weight: 900;
+        z-index: -1; // prevents the first option from disappearing when the cursor is hover
       }
     }
   }
