@@ -1,0 +1,4 @@
+.hero-image {
+  background-size: cover;
+  @include retina-image('hero1_home_1440', 'jpg', 1440px, 788px);
+}
