@@ -1,0 +1,29 @@
+.main-navigation-bar {
+  align-self: center;
+  display: flex;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  li {
+    &:last-child {
+      a { border-right: none; }
+    }
+
+    a {
+      border-right: 2px solid $cerisered;
+      color: $black;
+      display: block;
+      padding: 5px 0;
+      text-align: center;
+      width: 180px;
+
+      &:hover {
+        color: $cerisered;
+        font-weight: 900;
+        z-index: -1; // prevents the first option from disappearing when the cursor is hover
+      }
+    }
+  }
+}
