@@ -1,10 +1,10 @@
 @mixin retina-image($filename, $extension, $width, $height) {
-  background-image: url($filename + '.' + $extension);
+  background-image: url($cloudinary-path + $filename + '.' + $extension);
   height: $height;
   width: $width;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url($filename + '@2x.' + $extension);
+    background-image: url($cloudinary-path + $filename + '_2x.' + $extension);
     background-size: $width $height;
   }
 }
@@ -18,12 +18,12 @@
 }
 
 @mixin sprite-selector ($x-position, $y-position, $width, $height){
-  background: url('sprite.png') no-repeat $x-position $y-position;
+  background: url($cloudinary-path + 'sprite.png') no-repeat $x-position $y-position;
 	height: $height;
 	width: $width;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background: url('sprite@2x.png') no-repeat ($x-position * 2) ($y-position * 2);
+    background: url($cloudinary-path + 'sprite_2x.png') no-repeat ($x-position * 2) ($y-position * 2);
     height: $height * 2;
     transform: scale(0.5);
     width: $width * 2;
